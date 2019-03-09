@@ -5,6 +5,6 @@ class Triangle
   end
   
   def kind
-    
+    @sides.min
   end
 end
