@@ -5,7 +5,7 @@ class Triangle
   end
   
   def kind
-    sides = @sides.dup
+    if sides.include? 0 or
     
   end
 end
