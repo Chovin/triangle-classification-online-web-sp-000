@@ -6,7 +6,7 @@ class Triangle
   
   def kind
     a,b,c = @sides
-    if @sides.include? 0 || a+b<c || c+a<b || b+c<a then
+    if (@sides.collect {|x| x <= 0}).length>0 || a+b<c || c+a<b || b+c<a then
       raise TriangleError
     elsif @sides.uniq.length == 1
       return :equilateral
