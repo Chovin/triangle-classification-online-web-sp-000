@@ -10,7 +10,7 @@ class Triangle
       raise TriangleError
     elsif @sides.uniq.length == 1
       return :equilateral
-    elsif @sides.uniq.lenght == 2
+    elsif @sides.uniq.length == 2
       return :isosceles
     end
     return :scalene
