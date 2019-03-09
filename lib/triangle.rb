@@ -6,7 +6,6 @@ class Triangle
   
   def kind
     sides = @sides.dup
-    largest = sides.delete_at(sides.index sides.max)
     
   end
 end
